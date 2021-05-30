@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onStop() {
-        super.onStop();
         handler.removeCallbacks(goNext);
+        super.onStop();
     }
 }

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.SnapHelper;
 import com.carbit3333333.loftcoin.R;
 import com.carbit3333333.loftcoin.databinding.ActivityWelcomeBinding;
 import com.carbit3333333.loftcoin.ui.main.MainActivity;
+import com.carbit3333333.loftcoin.widget.CircleIndicator;
 
 public class WelcomeActivity extends AppCompatActivity {
     public static final String KEY_SHOW_WELCOME = "show_welcome";
@@ -27,7 +28,9 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.recycler.setLayoutManager(new LinearLayoutManager(this,
                 RecyclerView.HORIZONTAL, false));
+        binding.recycler.addItemDecoration(new CircleIndicator(this));
         binding.recycler.setAdapter(new WelcomeAdapter());
+        binding.recycler.setHasFixedSize(true);
         helper = new PagerSnapHelper();
         helper.attachToRecyclerView(binding.recycler);
         binding.btnStart.setOnClickListener((v -> {
