@@ -40,11 +40,8 @@ public class CircleIndicator extends RecyclerView.ItemDecoration {
             if (lm instanceof LinearLayoutManager) {
                 currentIndicator = ((LinearLayoutManager) lm).findFirstCompletelyVisibleItemPosition();
             }
-            for (int i = 0; i < adapter.getItemCount(); i++) {
-                currentIndicator = ((LinearLayoutManager) lm).findFirstCompletelyVisibleItemPosition();
-            }
             for (int i = 0; i < adapter.getItemCount(); i++){
-                drawIndicator(c, posX +4 * indicatorRadius * i, posY, currentIndicator ==1);
+                drawIndicator(c, posX +4 * indicatorRadius * i, posY, currentIndicator ==i);
             }
         }
 
