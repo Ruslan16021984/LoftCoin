@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/wallets"
         android:name="com.carbit3333333.loftcoin.ui.wallets.WalletFragment"
-        android:label="@string/wallets"
+        android:label="fragment_wallet"
         tools:layout="@layout/fragment_wallet" />
     <fragment
         android:id="@+id/rates"
         android:name="com.carbit3333333.loftcoin.ui.rates.RatesFragment"
-        android:label="@string/rates"
+        android:label="fragment_rates"
         tools:layout="@layout/fragment_rates" />
     <fragment
         android:id="@+id/converter"
         android:name="com.carbit3333333.loftcoin.ui.converter.ConverterFragment"
-        android:label="@string/converter"
+        android:label="fragment_converter"
         tools:layout="@layout/fragment_converter" />
 </navigation>

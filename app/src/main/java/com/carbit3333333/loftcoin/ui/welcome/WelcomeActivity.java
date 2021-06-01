@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
+import com.carbit3333333.loftcoin.R;
 import com.carbit3333333.loftcoin.databinding.ActivityWelcomeBinding;
 import com.carbit3333333.loftcoin.ui.main.MainActivity;
 import com.carbit3333333.loftcoin.widget.CircleIndicator;

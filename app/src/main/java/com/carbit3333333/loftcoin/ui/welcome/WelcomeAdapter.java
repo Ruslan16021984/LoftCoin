@@ -52,9 +52,7 @@ public class WelcomeAdapter extends RecyclerView.Adapter<WelcomeAdapter.ViewHold
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-
         final WelcomePageBinding binding;
-
         public ViewHolder(@NonNull WelcomePageBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
